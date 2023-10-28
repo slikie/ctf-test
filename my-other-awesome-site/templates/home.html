@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="text-align: center; padding: 30px;">
+    <!-- Headshot Image -->
+    <img src="{{ url_for('static', filename='headshot.png') }}" alt="Unhackable Andy's Picture"
+        style="border-radius: 75%; margin-bottom: 20px;">
+
+    <!-- Bio -->
+    <!-- Bio -->
+    <h2>Formerly Unhackable Andy</h2>
+    <p>
+        Formerly known as "Unhackable Andy", I'm still a legend in the tech world! Yes, recently there was a minor
+        incident where an insignificant so-called "hack" took place, but let's get a few things straight. First and
+        foremost, I was told that my credentials would be SECURE there. So it's not my fault! Sheesh.
+    </p>
+
+    <p>
+        Since that unfortunate incident (which we won't harp on, but I still blame that treacherous parrot), I've
+        embarked
+        on some new projects. Admittedly, things haven't been as smooth as they once were. Take, for instance, my
+        "VaultChain". Designed to be the successor to "Impenetrable Wallet", early testers found they
+        could occasionally... see other people’s balances. A minor oversight. Then there was the "Titanium Lockbox",
+        hailed
+        as a quantum-safe encryption tool. Sadly, it couldn't handle basic password attempts like "password123". I still
+        maintain
+        it's because users didn't read the manual properly.
+    </p>
+
+    <p>
+        Sure, the critics are having a field day. But they're just jealous. So, to all the haters: "If it's coded by
+        Andy, it's
+        unhackable." Just disregard that one time...
+    </p>
+
+    <p>
+        If you think that’s going to stop me, think again. My revenge is imminent. In the meantime, you can still follow
+        my unparalleled genius on GitHub!
+    </p>
+
+    <!-- Social Media Links -->
+    <div>
+        <a href="https://github.com/UnhackableAndy" target="_blank">
+            <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub" width="32">
+        </a>
+    </div>
+    {% endblock %}
